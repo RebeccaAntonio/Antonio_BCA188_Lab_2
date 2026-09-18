@@ -1,0 +1,6 @@
+  SHORT EXPLANATION:
+
+  The function getLampBrightness() uses two parameters: switchOn and brightnessSetting. switchOn tells whether the switch is ON or OFF, 
+  while brightnessSetting tells how bright the lamp should be. If the switch is ON, the function returns the brightness setting. If the 
+  switch is OFF, it returns 0. The returned value is stored in lampBrightness. This shows that when the switch is turned OFF, the lamp 
+  becomes 0 brightness, but the original brightness setting stays the same.
