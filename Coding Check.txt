@@ -1,0 +1,23 @@
+  CODING CHECK:
+
+  1. In int brightnessSetting = 75;, identify the data type, variable name, and initial value. How would you change the value to 50?
+        = In int brightnessSetting = 75;, the data type is int, the variable name is brightnessSetting, and the initial value is 75. 
+          To change it to 50, change the value to int brightnessSetting = 50;
+  2. Why is bool suitable for switchOn, while int is suitable for brightnessSetting?
+        = bool is suitable for switchOn because it only needs two values: true or false, which represent ON or OFF. 
+          int is suitable for brightnessSetting because the brightness can have different whole-number values, such as 0, 50, and 100.
+  3. Predict the output when brightnessSetting is 80 and switchOn is false.
+        = The output will be: 
+          Brightness setting: 80
+          Lamp brightness: 0
+          The brightness setting stays at 80, but the lamp brightness is 0 because the switch is OFF.
+  4. Are switchOn and switchon the same variable? Explain.
+        = No, they are not the same variable. Arduino/C++ is case-sensitive, so a capital O and a small o are treated differently. 
+          Therefore, switchOn and switchon are different variable names.
+  5. What values are passed to getLampBrightness(), and what does it return?
+        = The function receives switchOn and brightnessSetting as its parameters. switchOn tells if the switch is ON or OFF,  
+          while brightnessSetting gives the desired brightness.
+          The function returns the brightness setting when the switch is ON and 0 when the switch is OFF.
+  6. If lampBrightness is declared inside setup(), can loop() access it directly? Explain.
+        = No, loop() cannot access lampBrightness directly because it is declared inside setup(). This makes it a local variable, 
+          so it can only be used inside setup(). If we want loop() to use it, we need to declare it outside the functions as a global variable.
